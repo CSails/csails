@@ -27,7 +27,7 @@ ul, ol
       display: inline-block
       width: 45px
       height: 40px
-      background-color: #10acc2
+      background-color: $colHighlight
       text-align: center
       margin: 0 6px
       >span
@@ -68,12 +68,21 @@ footer
     font-size: 16px
     border-bottom: 1px solid #ccc
     padding: 10px
+
   .rank_content
     ul
       >li
         padding: 10px
+
   .rank
     text-align: center
+    display: inline-block
+    width: 40px
+    height: 28px
+
+  .user_name
+    color: #017E66
+    padding: 50px
 
 .rank.crown
   display: inline-block
@@ -91,3 +100,8 @@ footer
 
 .crown.crown-3rd
   background-position: 0 -58px
+
+.ellipsis
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
