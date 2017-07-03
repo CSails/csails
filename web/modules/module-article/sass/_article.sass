@@ -1,55 +1,107 @@
 @charset "utf-8"
 
-.article_header
-  position: relative
-  margin: 0 auto
+body
   a
-    color: $colHighlight
+    color: #273240
+    &:active,&:hover
+      text-decoration: none
+
+ul, ol
+  list-style: none
+  margin: 0
+  padding: 0
+
+.mgt-20
+  margin-bottom: 20px
+
+.article_part
+  ul
+    >li
+      float: left
+      padding: 10px 0
+      border-bottom: 1px solid #eee
 
 .article_container
-  position: relative
-  background: #fff
   .article_content
-    padding: 18px 20px 0 90px
-    border-bottom: 1px solid $split-grey
-    @include size(percentage(1),80)
     .article_answer
-      @include position(absolute,top 15 left 8)
-      @include size(50)
-      background: $colHighlight
+      display: inline-block
+      width: 45px
+      height: 40px
+      background-color: red
+      text-align: center
+      margin: 0 6px
       >span
-        padding-top: 4px
-        text-align: center
-        font-size: 14px
-        color: #fff
         display: block
+        color: #fff
     .article_browse
-      @include position(absolute,top 15 left 80)
-      @include size(50)
+      display: inline-block
+      width: 45px
+      height: 40px
+      background-color: white
+      text-align: center
+      margin: 0 6px
       >span
-        padding-top: 4px
-        text-align: center
-        font-size: 14px
-        color: $secondary-grey
         display: block
     .article_person
-      @include position(absolute,top 15 left 150)
-      >span
-        padding-top: 4px
-        text-align: center
-        font-size: 14px
-        color: $secondary-grey
-    .article_title
-      @include position(absolute,top 15 left 150)
-      margin-top: 30px
-      >span
-        text-align: center
-        font-size: 18px
-        font-weight: 500
-        color: $bgDefault
-      >a
-        padding: 3px
-        text-align: center
-        font-size: 10px
-        background-color: $colHighlight
-        color: #fff
+      color: #999
+.tag
+  display: inline-block
+  padding: 0 6px
+  height: 20px
+  line-height: 20px
+  font-size: 12px
+  color: #fff
+.tag-green
+  background-color: #017E66
+  &:hover
+    color: #fff
+
+footer
+  border-top: 1px solid #eee
+  line-height: 1.6
+  .copy
+    text-align: center
+    font-size: 14px
+    margin: 40px 0
+.rank_box
+  .rank_title
+    font-size: 16px
+    border-bottom: 1px solid #ccc
+    padding: 10px
+
+  .rank_content
+    ul
+      >li
+        padding: 10px
+
+  .rank
+    text-align: center
+    display: inline-block
+    width: 40px
+    height: 28px
+
+  .user_name
+    color: #017E66
+    padding: 50px
+
+.rank.crown
+  display: inline-block
+  line-height: 42px
+  overflow: hidden
+  vertical-align: middle
+  background-position: 0 0
+  width: 40px
+  height: 28px
+  background-image: url(../img/rank.png)
+  background-repeat: no-repeat
+
+.crown.crown-2nd
+  background-position: 0 -29px
+
+.crown.crown-3rd
+  background-position: 0 -58px
+
+.ellipsis
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
