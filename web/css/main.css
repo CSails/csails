@@ -130,4 +130,23 @@
         background-color: #10acc2;
         color: #fff; }
 
+.full-container {
+  margin: 0;
+  background-color: #e1e1e1;
+  height: 700px; }
+  .full-container .register-content {
+    margin: 20px 0 0 20px;
+    background-color: white;
+    max-width: 620px; }
+    .full-container .register-content .register-input, .full-container .register-content .register-btn {
+      margin: 20px 120px 20px 100px; }
+    .full-container .register-content .register-btn {
+      text-align: center; }
+      .full-container .register-content .register-btn .btn {
+        color: #ecf0f1;
+        background-color: #54D1DD; }
+        .full-container .register-content .register-btn .btn:hover, .full-container .register-content .register-btn .btn:focus {
+          color: #ecf0f1;
+          background-color: #54BDDD; }
+
 /*# sourceMappingURL=main.css.map */

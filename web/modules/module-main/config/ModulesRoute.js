@@ -6,7 +6,7 @@ moduleMain.config(function ($stateProvider) {
         .state('login', {
             cache: false,
             url: '/login',
-            templateUrl: 'templates/login.html',
+            templateUrl: 'templates/logins.html',
             controller: 'LoginController'
         })
 });
