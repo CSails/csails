@@ -14,5 +14,16 @@ modulePersonal.config(function ($stateProvider) {
             }
 
         })
+        .state('csails.register', {
+            cache: false,
+            url: '/register',
+            views:{
+                'csails-main':{
+                    templateUrl: 'templates/register.html',
+                    controller: 'PersonalController'
+                }
+            }
+
+        })
 
 });
