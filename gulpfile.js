@@ -55,7 +55,8 @@ var tasksArgs = {
             'node_modules/ng-sweet-alert/**',
             'node_modules/sweetalert/dist/**',
             'node_modules/jquery/jquery.js',
-            'node_modules/bootstrap/dist/js/bootstrap.js'
+            'node_modules/bootstrap/dist/js/bootstrap.js',
+            'lib/flyui/**'
         ],
         dest: 'www/lib/'
     },
