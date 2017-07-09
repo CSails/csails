@@ -1,15 +1,76 @@
-<div class="full-container">
-<div class="register-content">
-    <div class="input-group register-input">
-        <span class="input-group-addon">用户名</span>
-    <input class="form-control" ng-model="user.username">
-   </div>
-    <div class="input-group register-input">
-        <span class="input-group-addon">密 码</span>
-        <input type="password" class="form-control" ng-model="user.password">
+<div class="container-fluid full-container">
+    <div class="row-fluid register-header">
+        <h3 class="col-xs-11">登录</h3>
+        <button class="col-xs-1 close" ng-click="close()" ><span class="pull-right" aria-hidden>×</span>
+        </button>
     </div>
-    <div class="register-btn">
-      <button class="btn btn-default" ng-click="rigister()">注册</button>
+    <div class="row-fluid bg-white">
+        <div class="col-xs-4 login-wrap">
+               <h3>用户登录</h3>
+                <form>
+                    <div class="form-group">
+                        <label class="">Email</label>
+                        <input type="text" class="form-control" placeholder=" Email">
+                    </div>
+                    <div class="form-group">
+                        <label class="">密码</label>
+                        <span class="pull-right">
+                            <a href="">忘记密码</a>
+                        </span>
+                        <input type="password" class="form-control" placeholder="密码">
+                    </div>
+                    <div class="form-group">
+                         <div class="checkbox pull-left">
+                             <label>
+                                 <input name="remember" type="checkbox" value="1">
+                                 "记住登录状态"
+                             </label>
+                         </div>
+                        <button type="submit" class="btn btn-primary pull-right" ng-click="">登录</button>
+                    </div>
+                </form>
+                <p class="text-muted h4 visible-xs-block">快速登录</p>
+                <div class="widget-login">
+                    <p class="mt5 mr10 pull-left hidden-xs">快速登录</p>
+                    <a href="" ng-click="">
+                        <span class="icon-sn-google"></span>
+                        <strong class="visible-xs-inline">Google 账号</strong>
+                    </a>
+                    <a href="" ng-click="">
+                        <span class="icon-sn-google"></span>
+                        <strong class="visible-xs-inline">Google 账号</strong>
+                    </a>
+                    <a href="" ng-click="">
+                        <span class="icon-sn-google"></span>
+                        <strong class="visible-xs-inline">Google 账号</strong>
+                    </a>
+                </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="login-vline hidden-xs"></div>
+        </div>
+        <div class="col-xs-4  register-wrap">
+            <h3>注册新账号</h3>
+            <form>
+                <div class="form-group">
+                    <label>名字</label>
+                    <input type="text" ng-model="" class="form-control" placeholder="真实姓名或常用昵称">
+                </div>
+                <div class="">
+                    <input type="email" name="mail" class="form-control" placeholder="hello@segmentfault.com">
+                </div>
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password" class="form-control" placeholder="不少于6位">
+                </div>
+                <div class="form-group">
+                    <div class="checkbox pull-left">
+                        "同意并接受"
+                        <a href="" target="_blank">《服务条款》</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right" ng-click="">注册</button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 </div>

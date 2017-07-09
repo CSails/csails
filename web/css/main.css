@@ -153,21 +153,54 @@ footer {
 
 .full-container {
   margin: 0;
-  background-color: #e1e1e1;
+  background-color: white;
   height: 700px; }
-  .full-container .register-content {
-    margin: 20px 0 0 20px;
-    background-color: white;
-    max-width: 620px; }
-    .full-container .register-content .register-input, .full-container .register-content .register-btn {
-      margin: 20px 120px 20px 100px; }
-    .full-container .register-content .register-btn {
-      text-align: center; }
-      .full-container .register-content .register-btn .btn {
-        color: #ecf0f1;
-        background-color: #54D1DD; }
-        .full-container .register-content .register-btn .btn:hover, .full-container .register-content .register-btn .btn:focus {
-          color: #ecf0f1;
-          background-color: #54BDDD; }
+  .full-container .register-header {
+    background-color: #E4E4E6;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 15px;
+    min-height: 65px; }
+    .full-container .register-header h3 {
+      line-height: 0; }
+    .full-container .register-header > .close {
+      margin-top: 2px;
+      background-color: #E4E4E6; }
+
+div {
+  display: block; }
+
+.bg-white {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  height: 100%;
+  width: 100%; }
+  .bg-white .login-wrap {
+    padding-left: 100px; }
+    .bg-white .login-wrap .h4 {
+      margin-top: 70px;
+      margin-bottom: 10px; }
+
+.bg-white .login-vline {
+  position: relative;
+  height: 320px;
+  border-left: 1px solid #d0d0d0;
+  margin-left: 50%; }
+
+@media (max-width: 767px) {
+  .bg-white .hidden-xs {
+    display: none !important; }
+
+  .bg-white .login-wrap .h4 {
+    display: block !important; }
+
+  .widget-login > a .visible-xs-inline {
+    display: inline !important; } }
+.bg-white .register-wrap {
+  padding-right: 100px; }
+
+.widget-login {
+  margin-top: 60px; }
 
 /*# sourceMappingURL=main.css.map */
