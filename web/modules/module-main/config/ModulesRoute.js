@@ -3,10 +3,5 @@
  */
 moduleMain.config(function ($stateProvider) {
     $stateProvider
-        .state('login', {
-            cache: false,
-            url: '/login',
-            templateUrl: 'templates/logins.html',
-            controller: 'LoginController'
-        })
+
 });

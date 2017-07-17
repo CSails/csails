@@ -25,5 +25,15 @@ modulePersonal.config(function ($stateProvider) {
             }
 
         })
+        .state('csails.login', {
+            cache: false,
+            url: '/login',
+            views:{
+                'csails-main':{
+                    templateUrl: 'templates/login.html',
+                    controller: 'LoginController'
+                }
+            }
+        })
 
 });

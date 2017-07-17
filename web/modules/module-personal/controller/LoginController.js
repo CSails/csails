@@ -1,7 +1,7 @@
 /**
  * Created by chao  on 2017/06/11.
  */
-moduleMain.controller('LoginController', function ($scope,$rootScope,$state,SailsLog,$log,UserResource) {
+modulePersonal.controller('LoginController', function ($scope,$rootScope,$state) {
     $scope.login= login;
     $scope.$on("$viewContentLoaded",function(){
 
