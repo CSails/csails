@@ -35,5 +35,14 @@ modulePersonal.config(function ($stateProvider) {
                 }
             }
         })
-
+        .state('csails.forget', {
+            cache: false,
+            url: '/forget',
+            views:{
+                'csails-main':{
+                    templateUrl: 'templates/forget.html',
+                    controller: 'ForgetController'
+                }
+            }
+        })
 });
