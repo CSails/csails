@@ -14,5 +14,15 @@ moduleArticle.config(function ($stateProvider) {
             }
 
         })
+        .state('csails.detail', {
+            cache: false,
+            url: '/article',
+            views:{
+                'csails-main':{
+                    templateUrl: 'templates/detail.html',
+                    controller: 'ArticleController'
+                }
+            }
 
+        })
 });
